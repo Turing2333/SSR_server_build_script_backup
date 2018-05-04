@@ -38,6 +38,9 @@ sudo apt-get dist-upgrade
 
 sudo reboot
 
+或执行
+
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo reboot
 
 
 # 单独给ShadowsocksR服务端指定 DNS
@@ -64,7 +67,7 @@ ShadowsocksR子目录(单用户)，即目录为 /root/shadowsocksr/shadowsocks
 echo -e "8.8.8.8 53
 
 8.8.4.4 53" > /root/shadowsocksr/dns.conf
- 
+
 子目录
 echo -e "8.8.8.8 53
 
@@ -94,7 +97,7 @@ nameserver 8.8.8.8" > /etc/resolv.conf
 此方法具有次级优先级，当ShadowsocksR服务端目录下没有 dns.conf 文件时，ShadowsocksR便会读取这个系统默认的DNS。
 
 
-# 重启ShadowsocksR服务端
+## 重启ShadowsocksR服务端
 
 以上DNS修改过后，都需要重启ShadowsocksR服务端才能生效。
 
