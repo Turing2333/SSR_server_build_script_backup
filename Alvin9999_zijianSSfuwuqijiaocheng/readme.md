@@ -11,7 +11,9 @@ sudo su
 
 一键部署ssr代码(虽然代码兼容SS客户端，但最好用SSR客户端，因为SSR客户端可以用SSR混淆协议）如下：
 
-yum -y install wget
+apt-get install aptitude
+
+aptitude install -y wget
 
 wget --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/morenjiamifangshihehunxiao/ssr.sh
 
@@ -23,9 +25,11 @@ chmod +x ssr.sh
 
 上面这个代码是默认的加密方式和混淆协议，没法自行修改加密方式和混淆协议，如果有这方面的需求，可以用下面这个脚本
 
-CentOS/Debian/Ubuntu ShadowsocksR单/多端口一键管理脚本：
+Debian/Ubuntu/Deepin ShadowsocksR单/多端口一键管理脚本：
 
-yum -y install wget
+apt-get install aptitude
+
+aptitude install -y wget
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/CentOS_Debian_Ubuntu_SSR_danduoduankouyijianguanlijiaoben/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 
@@ -114,7 +118,9 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_
 
 【谷歌BBR加速教程】
 
-yum -y install wget
+apt-get install aptitude
+
+aptitude install -y wget
 
 wget --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/GoogleBBRjiasu/bbr.sh
 
@@ -127,7 +133,9 @@ chmod +x bbr.sh
 
 【锐速加速教程】
 
-yum -y install wget
+apt-get install aptitude
+
+aptitude install -y wget
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/ruisujiasu/serverspeeder-all.sh && bash serverspeeder-all.sh
 

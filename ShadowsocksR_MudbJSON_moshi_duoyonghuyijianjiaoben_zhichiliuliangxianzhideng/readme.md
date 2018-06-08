@@ -7,6 +7,10 @@ sudo su
 
 注意：如果你安装的有我的另一个 ssr.sh 脚本，请先卸载ShadowsocksR服务端，再安装这个脚本（不能共存）！
 
+apt-get install aptitude
+
+aptitude install -y wget
+
 wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/ShadowsocksR_MudbJSON_moshi_duoyonghuyijianjiaoben_zhichiliuliangxianzhideng/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 
 注意：关于限制设备数数，这个协议必须是非原版并且不兼容原版才有效，也就是必须SSR客户端使用协议的情况下，才有效！
@@ -16,7 +20,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_
 运行脚本，
 
 bash ssrmu.sh
- 
+
 # 还有一个 运行参数，是用于所有用户流量清零的
 bash ssrmu.sh clearall
 # 不过不需要管这个，可以通过脚本自动化的设置 crontab 定时运行脚本
@@ -24,7 +28,7 @@ bash ssrmu.sh clearall
 
   ShadowsocksR MuJSON一键管理脚本 [vX.X.X]
   ---- Toyo | doub.io/ss-jc60 ----
- 
+
   1. 安装 ShadowsocksR
   2. 更新 ShadowsocksR
   3. 卸载 ShadowsocksR
@@ -43,9 +47,9 @@ bash ssrmu.sh clearall
 ————————————
  14. 其他功能
  15. 升级脚本
- 
+
  当前状态: 已安装 并 已启动
- 
+
 请输入数字 [1-15]：
 注意：添加/删除/修改 用户配置后，无需重启ShadowsocksR服务端，ShadowsocksR服务端会定时读取数据库文件内的信息，不过修改 用户配置后，可能要等个十几秒才能应用最新的配置（因为ShadowsocksR不是实时读取数据库的，所以有间隔时间）。
 文件位置
@@ -69,7 +73,7 @@ ShadowsocksR 默认支持UDP转发，服务端无需任何设置。
 
 本脚本已经集成了 安装/卸载 锐速(ServerSpeeder)/Lotserver，但是是否支持请查看 Linux支持内核列表 。（锐速、LotServer不支持OpenVZ）
 
- 
+
 
 注意：本脚本中的 显示链接信息中的 获取IP归属地功能使用的是 IPIP.NET 的免费API接口，因为限速所以每秒只能检测一次，同时 IPIP.NET 的免费API接口并不会保证稳定性，可能什么时候就突然暂时失效了，这是本人不可控的，有条件可以自建API接口。
 
@@ -86,20 +90,20 @@ crontab -e
 yum update
 yum install -y crond
 # Debian/Ubuntu系统：
-apt-get update
-apt-get install -y cron
+apt-get install aptitude
+aptitude install -y cron
 安装并打开 crontab 后，我们根据需求添加下面的代码，添加后我们按 ESC键 退出编辑模式，然后输入 :wq 保存并退出。
 
 # 添加定时重启任务
 # 是添加到 crontab -e 文本编辑框内，而不是让你执行！
 # 下面代码前面的 * * * * * 分别对应：分钟 小时 日 月 星期
- 
+
 10 2 * * * /etc/init.d/ssr restart
 # 这个代表 每天2点10分重启一次 ShadowsocksR
- 
+
 10 2 */2 * * /etc/init.d/ssr restart
 # 这个代表 每隔2天的2点10分重启一次 ShadowsocksR
- 
+
 10 */4 * * * /etc/init.d/ssr restart
 # 这个代表 每隔4小时的第10分重启一次 ShadowsocksR
 
@@ -111,7 +115,9 @@ apt-get install -y cron
 
 【谷歌BBR加速教程】
 
-yum -y install wget
+apt-get install aptitude
+
+aptitude install -y wget
 
 wget --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/GoogleBBRjiasu/bbr.sh
 
@@ -123,7 +129,9 @@ chmod +x bbr.sh
 
 【锐速加速教程】
 
-yum -y install wget
+apt-get install aptitude
+
+aptitude install -y wget
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/ruisujiasu/serverspeeder-all.sh && bash serverspeeder-all.sh
 
@@ -132,5 +140,3 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_
 提示没有完全匹配的内核,随便选一个内核就行,按照提示来输入数字,按回车键即可
 
 锐速安装成功标志为出现running字样。
-
-
