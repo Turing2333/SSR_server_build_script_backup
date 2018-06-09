@@ -7,7 +7,7 @@ sudo su
 
 注意：如果你安装的有我的另一个 ssr.sh 脚本，请先卸载ShadowsocksR服务端，再安装这个脚本（不能共存）！
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 
@@ -90,7 +90,7 @@ crontab -e
 yum update
 yum install -y crond
 # Debian/Ubuntu系统：
-apt-get install aptitude
+apt-get install -y aptitude
 aptitude install -y cron
 安装并打开 crontab 后，我们根据需求添加下面的代码，添加后我们按 ESC键 退出编辑模式，然后输入 :wq 保存并退出。
 
@@ -115,7 +115,7 @@ aptitude install -y cron
 
 【谷歌BBR加速教程】
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 
@@ -129,7 +129,7 @@ chmod +x bbr.sh
 
 【锐速加速教程】
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 

@@ -11,7 +11,7 @@ sudo su
 
 一键部署ssr代码(虽然代码兼容SS客户端，但最好用SSR客户端，因为SSR客户端可以用SSR混淆协议）如下：
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 
@@ -27,7 +27,7 @@ chmod +x ssr.sh
 
 Debian/Ubuntu/Deepin ShadowsocksR单/多端口一键管理脚本：
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 
@@ -118,7 +118,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_
 
 【谷歌BBR加速教程】
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 
@@ -133,7 +133,7 @@ chmod +x bbr.sh
 
 【锐速加速教程】
 
-apt-get install aptitude
+apt-get install -y aptitude
 
 aptitude install -y wget
 
