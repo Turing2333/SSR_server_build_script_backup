@@ -27,9 +27,7 @@ chmod +x ssr.sh
 
 Debian/Ubuntu/Deepin ShadowsocksR单/多端口一键管理脚本：
 
-apt-get install -y aptitude
-
-aptitude install -y wget
+apt-get install -y wget
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/CentOS_Debian_Ubuntu_SSR_danduoduankouyijianguanlijiaoben/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 
@@ -118,9 +116,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_
 
 【谷歌BBR加速教程】
 
-apt-get install -y aptitude
-
-aptitude install -y wget
+apt-get install -y wget
 
 wget --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/GoogleBBRjiasu/bbr.sh
 
@@ -133,9 +129,7 @@ chmod +x bbr.sh
 
 【锐速加速教程】
 
-apt-get install -y aptitude
-
-aptitude install -y wget
+apt-get install -y wget
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Turing2333/SSR_server_build_script_backup/master/Alvin9999_zijianSSfuwuqijiaocheng/ruisujiasu/serverspeeder-all.sh && bash serverspeeder-all.sh
 
